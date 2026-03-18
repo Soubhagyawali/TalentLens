@@ -1,7 +1,8 @@
-# Endee TalentLens
+# 🚀 Endee TalentLens – AI Candidate Discovery Platform
 
-A complete production-ready full-stack application for vector semantic search, using Endee Vector Database, HuggingFace embeddings, Spring Boot, and React (Vite+Tailwind).
+An AI-powered full-stack application that enables **semantic candidate search** using vector embeddings. Instead of keyword matching, it retrieves **contextually relevant profiles** using embeddings and vector similarity.
 
+---
 ## Architecture
 
 * **Frontend**: React + Vite + Tailwind CSS
@@ -17,6 +18,7 @@ Before you begin, ensure you have the following installed on your machine:
 3. **Maven**: Verify with `mvn -version`
 4. **Docker**: Verify with `docker -v`
 
+---
 ---
 
 ## 🚀 Step-by-Step Setup
@@ -36,6 +38,8 @@ Endee needs to be running via Docker before the backend can interact with it.
    docker ps
    ```
    You should see `endee-oss` in the list.
+   
+---
 
 ### Step 2: Get a HuggingFace API Key
 
@@ -43,7 +47,7 @@ We use HuggingFace's free Inference API to generate embeddings.
 1. Go to [HuggingFace](https://huggingface.co/) and create an account.
 2. Go to **Settings > Access Tokens**.
 3. Create a new token (Read access is fine) and copy it.
-
+---
 ### Step 3: Run the Spring Boot Backend
 
 1. Open a new terminal and navigate to the backend directory:
@@ -80,6 +84,7 @@ We use HuggingFace's free Inference API to generate embeddings.
 4. The terminal will show a local URL, typically `http://localhost:5173`. Open this URL in your web browser.
 
 ---
+---
 
 ## 📸 Practical Working Demo
 
@@ -95,6 +100,7 @@ We use HuggingFace's free Inference API to generate embeddings.
 
 👉 User searches using natural language → system retrieves most relevant candidates using vector similarity.
 
+---
 ---
 
 ### 🔹 Best Match Highlight
