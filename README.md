@@ -81,6 +81,27 @@ We use HuggingFace's free Inference API to generate embeddings.
 
 ---
 
+## 📸 Practical Working Demo
+
+### 🔹 Insert Candidate (Storing Data)
+![Insert Candidate](screenshots/insert.png)
+
+👉 User enters candidate profile → system converts to embedding → stores in Endee Vector DB.
+
+---
+
+### 🔹 Search Candidate (Semantic Retrieval)
+![Search Results](screenshots/search.png)
+
+👉 User searches using natural language → system retrieves most relevant candidates using vector similarity.
+
+---
+
+### 🔹 Best Match Highlight
+![Best Match](screenshots/best-match.png)
+
+👉 Top result is highlighted with highest similarity score, helping recruiters identify the best candidate quickly.
+
 ## 🧠 End-to-End Testing Flow
 
 Now that everything is running, let's test the flow!
@@ -100,8 +121,3 @@ Now that everything is running, let's test the flow!
 
 ---
 
-## ⚠️ Troubleshooting
-
-* **Endee Connection Refused**: Make sure your Docker container is actually running and mapped correctly (`-p 9090:8080`). Check the port in `application.properties`.
-* **HuggingFace 503 Service Unavailable**: The HuggingFace free API model might need a few seconds to "warm up". Just wait 10 seconds and try clicking Insert or Search again.
-* **CORS Errors in Browser Console**: Ensure the backend is running on port 8080 and the frontend is on port 5173. The Spring Boot `WebConfig.java` allows CORS specifically for `http://localhost:5173`.
