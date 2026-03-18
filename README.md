@@ -135,6 +135,11 @@ Frontend will be available at **http://localhost:5173** (or the URL shown in the
 
 ---
 
+## 🧠 How Similarity Works
+Results are ranked using cosine similarity between embedding vectors generated via HuggingFace.
+
+---
+
 ## 📸 Screenshots
 
 ### Insert Candidate
