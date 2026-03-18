@@ -66,7 +66,7 @@ We use HuggingFace's free Inference API to generate embeddings.
    ```
 5. Wait for the console to print `Started SemanticSearchApplication`. The backend is now running at `http://localhost:8080`.
 6. **Test the Backend Health:** Open your browser and go to `http://localhost:8080/api/health`. You should see a success message.
-
+---
 ### Step 4: Run the React Frontend
 
 1. Open a *third* terminal window and navigate to the frontend directory:
@@ -101,12 +101,14 @@ We use HuggingFace's free Inference API to generate embeddings.
 👉 User searches using natural language → system retrieves most relevant candidates using vector similarity.
 
 ---
----
 
 ### 🔹 Best Match Highlight
 ![Best Match](screenshots/best-match.png)
 
 👉 Top result is highlighted with highest similarity score, helping recruiters identify the best candidate quickly.
+
+---
+---
 
 ## 🧠 End-to-End Testing Flow
 
