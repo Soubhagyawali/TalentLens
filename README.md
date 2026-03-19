@@ -168,7 +168,7 @@ Results are ranked using cosine similarity between embedding vectors generated v
 ## 👨‍💻 Author
 
 **Soubhagya Wali**  
-Full Stack Developer (Java(Spring Boot) + React)
+Full Stack Developer (Java-Spring Boot + React)
 
 ---
 
